@@ -3,7 +3,6 @@ import {GLTFLoader} from './three.js-master/three.js-master/examples/jsm/loaders
 import {OrbitControls} from './three.js-master/three.js-master/examples/jsm/controls/OrbitControls.js';
 import { EffectComposer } from './node_modules/three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from './node_modules/three/examples/jsm/postprocessing/RenderPass.js';
-import { GlitchPass } from './node_modules/three/examples/jsm/postprocessing/GlitchPass.js';
 
 const canvas = document.querySelector('.webgl')
 const scene = new THREE.Scene()
