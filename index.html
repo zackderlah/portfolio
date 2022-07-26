@@ -21,105 +21,162 @@
     </script>
     <script type="module" src="/index.js"></script>
 
-    <!-- Navigation Bar-->
-    <nav>
-        <ul>
+    <div id="page-container">
+        <div id="wrapper">
+            <!-- Navigation Bar-->
+            <nav>
+                <ul>
 
-            <div class="nav-bar">
-                <li><a class="active zack" href="#home">Zack Venables</a></li>
-                <img class="logo" src="./imgs/logo-white.png"></img>
-                <div class="links">
-                    <li><a href="#news">Projects</a></li>
-                    <li><a href="https://github.com/zackderlah" target="_blank">GitHub</a></li>
-                    <li><a href="#box">About</a></li>
-                </div>
+                    <div class="nav-bar">
+                        <li><a class="active zack" href="#home">Zack Venables</a></li>
+                        <img class="logo" src="./imgs/logo-white.png"></img>
+                        <div class="links">
+                            <li><a href="#box">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="https://github.com/zackderlah" target="_blank">GitHub</a></li>
+                        </div>
+                    </div>
+
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="menu">
+                        <p class="menu-link"><a href="#">Projects</a></p>
+                        <p class="menu-link"><a href="#">GitHub</a></p>
+                        <p class="menu-link"><a href="#">About</a></p>
+                    </div>
+                    <button id="btn" class="dark-btn" onclick="myFunction()">Light</button>
+                </ul>
+            </nav>
+
+            <div id="side-bar">
+                <img class="discord" src="/imgs/discord.png">
+                <img class="github" src="/imgs/github.png">
+                <img class="linkedin" src="/imgs/linkedin.png">
+                <div class="line"></div>
             </div>
 
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
 
-            <div class="menu">
-                <p class="menu-link"><a href="#">Projects</a></p>
-                <p class="menu-link"><a href="#">GitHub</a></p>
-                <p class="menu-link"><a href="#">About</a></p>
+            <div id="email-side">
+                <div class="line2"></div>
+                <p class="email"><a href="mailto: zackvenables00@gmail.com">zackvenables00@gmail.com</a></p>
+
             </div>
-            <button id="btn" class="dark-btn" onclick="myFunction()">Light</button>
-        </ul>
-    </nav>
 
-    <div id="side-bar">
-        <img class="discord" src="/imgs/discord.png">
-        <img class="github" src="/imgs/github.png">
-        <img class="linkedin" src="/imgs/linkedin.png">
-        <div class="line"></div>
+
+            <div id="intro">
+                <canvas class="webgl"></canvas>
+                <box id="box">
+                    Hello! I am a developer based in Australia!
+
+                </box>
+                <box id="text-box">
+                    <h1>
+                        Zack Venables
+                    </h1>
+
+                    <p id="subtitle">
+                        Web Wizard ( Designer / Developer / Engineer )
+                    </p>
+                    <img id="zack" src="/imgs/zack_pic.jpg">
+                    <h2 id="work">
+                        Work / Studies
+                    </h2>
+                    <p id="work-txt">
+                        I am student based in Brisbane currently studying computer science with a passion for designing
+                        and
+                        building
+                        front-end applications.
+                        I currently work for a health care company as a software engineer whilst I complete my
+                        university
+                        degree.
+                    </p>
+                    <h2 id="bio">
+                        Bio
+                    </h2>
+                    <div id="bio-txt">
+                        <div class="bio-section">
+                            <div class="bio-yr"><b>2000</b></div>
+                            <div class="bio-t">Born in Sydney, Australia.</div>
+                        </div>
+                        <div class="bio-section">
+                            <div class="bio-yr"><b>2018</b></div>
+                            <div class="bio-t"> Begun studying for Bachelor of Information Technology /
+                                Computer
+                                Science major at the Queensland University of Technology.</div>
+                        </div>
+                        <div class="bio-section">
+                            <div class="bio-yr"><b>2022 - Present</b></div>
+                            <div class="bio-tt">Working as a Software Engineer at Oracle Cerner.</div>
+                        </div>
+                    </div>
+                    <h2 id="hobbies">
+                        Hobbies / Interests
+                    </h2>
+                    <div id="hobbies-txt">
+                        <a class="spotifiy" href="http://open.spotify.com/user/johnnyslayo" target="_blank">Music </a>(
+                        rock
+                        /
+                        math rock / shoegaze / ambient ), Art, PC Gaming, Sports ( basketball, tennis, table tennis,
+                        volleyball
+                        )
+                    </div>
+                </box>
+
+                <!--<div id="projects">
+                    <h1> <br><br>/ Projects </h1>
+                    <div id="slider">
+                        <input type="radio" name="slider" id="slide1" checked>
+                        <input type="radio" name="slider" id="slide2">
+                        <input type="radio" name="slider" id="slide3">
+
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="inner">
+                                    <div class="slide slide_1">
+                                        <div class="slide-content">
+                                            <h2>Project 1</h2>
+                                            <p>Content for Project 1</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide slide_2">
+                                        <div class="slide-content">
+                                            <h2>Project 2</h2>
+                                            <p>Content for Project 2</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide slide_3">
+                                        <div class="slide-content">
+                                            <h2>Project 3</h2>
+                                            <p>Content for Project 3</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                        </div>
+                        <div id="bullets">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                        </div>
+                    </div>
+                </div> !-->
+            </div>
+
+        </div>
+        <div id="footer">zack venables</div>
     </div>
 
-    <div id="email-side">
-        <div class="line2"></div>
-        <p class="email"><a href="mailto: zackvenables00@gmail.com">zackvenables00@gmail.com</a></p>
-        
-    </div>
-
-
-    <div id="intro">
-        <canvas class="webgl"></canvas>
-        <box id="box">
-            Hello! I am a developer based in Australia!
-
-        </box>
-        <box id="text-box">
-            <h1>
-                Zack Venables
-            </h1>
-            <p id="subtitle">
-                Web Wizard ( Designer / Developer / Engineer )
-            </p>
-            <h2 id="work">
-                Work / Studies
-            </h2>
-            <p id="work-txt">
-                I am student based in Brisbane currently studying computer science with a passion for designing and
-                building
-                front-end applications.
-                I currently work for a health care company as a software engineer whilst I complete my university
-                degree.
-            </p>
-            <h2 id="bio">
-                Bio
-            </h2>
-            <div id="bio-txt">
-                <div class="bio-section">
-                    <div class="bio-yr"><b>2000</b></div>
-                    <div class="bio-t">Born in Sydney, Australia.</div>
-                </div>
-                <div class="bio-section">
-                    <div class="bio-yr"><b>2018</b></div>
-                    <div class="bio-t"> Begun studying for Bachelor of Information Technology /
-                        Computer
-                        Science major at the Queensland University of Technology.</div>
-                </div>
-                <div class="bio-section">
-                    <div class="bio-yr"><b>2022 - Present</b></div>
-                    <div class="bio-tt">Working as a Software Engineer at Oracle Cerner.</div>
-                </div>
-            </div>
-            <h2 id="hobbies">
-                Hobbies / Interests
-            </h2>
-            <div id="hobbies-txt">
-                <a class="spotifiy" href="http://open.spotify.com/user/johnnyslayo" target="_blank">Music </a>( rock /
-                math rock / shoegaze / ambient ), Art, PC Gaming, Sports ( basketball, tennis, table tennis, volleyball
-                )
-            </div>
-        </box>
-
-    </div>
     <script>
-
-
         function myFunction() {
             var element = document.body;
             element.classList.toggle("light-mode");
@@ -151,10 +208,8 @@
 
             index = index >= colors.length - 1 ? 0 : index + 1;
         });
-
-
-
     </script>
 </body>
+
 
 </html>
